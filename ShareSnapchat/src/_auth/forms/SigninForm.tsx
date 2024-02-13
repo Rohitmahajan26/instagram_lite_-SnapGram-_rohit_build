@@ -23,7 +23,7 @@ import { useUserContext } from "@/context/AuthContext"
 
 function SigninForm() {
   const {toast}=useToast();
-  const {checkAuthUser,isLoading:isUserLoading}=useUserContext();
+  const {checkAuthUser,isPending:isUserLoading}=useUserContext();
   const navigate=useNavigate()
 
   //Queries
