@@ -23,14 +23,14 @@ import { useUserContext } from "@/context/AuthContext"
 
 function SignupForm() {
   const {toast}=useToast();
-  const {checkAuthUser,isPending:isUserLoading}=useUserContext();
+  const {checkAuthUser}=useUserContext();
   const navigate=useNavigate()
 
   //Queries
   const {mutateAsync:createUserAccount,isPending:
     isCreatingAccount}=useCreateUserAccount();
 
-   const {mutateAsync:signInAccount,isPending:isSigningIn}=
+   const {mutateAsync:signInAccount}=
    useSignInAccount();
 
 
