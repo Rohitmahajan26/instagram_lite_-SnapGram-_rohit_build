@@ -70,18 +70,18 @@ function SigninForm() {
       <div className="sm:w-60  flex-center flex-col mt-2 ">
 
         <img src="/assets/images/logo.svg" alt="logo" />
-        <h2 className="h2-bold md:h3-bold pt-2 sm:pt-8 py-1">Log in account</h2>
-        <p className="text-light-3 w-full md:base-regular mt-1 ">Welcome back!</p>
+        <h2 className="h2-bold md:h3-bold pt-2 sm:pt-8 py-1 text-2xl sm:text-base">Log in account</h2>
+        <p className="text-light-3 w-full md:base-regular mt-1 text-center sm:text-left ">Welcome back!</p>
         <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-3 w-full ">
         
           <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem >
-                <FormLabel>email</FormLabel>
+              <FormItem className="flex flex-col">
+                <FormLabel>Email</FormLabel>
                 <FormControl>
-                  <Input placeholder="email" className="shad-input" {...field} />
+                  <Input placeholder="Email" className="shad-input" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -90,10 +90,10 @@ function SigninForm() {
             control={form.control}
             name="password"
             render={({ field }) => (
-              <FormItem >
+              <FormItem className="flex flex-col">
                 <FormLabel>Password</FormLabel>
                 <FormControl>
-                  <Input type="password" placeholder="password" className="shad-input" {...field} />
+                  <Input type="password" placeholder="Password" className="shad-input" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>

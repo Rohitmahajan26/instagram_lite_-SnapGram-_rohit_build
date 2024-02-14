@@ -87,7 +87,7 @@ function SignupForm() {
             control={form.control}
             name="name"
             render={({ field }) => (
-              <FormItem >
+              <FormItem className="flex flex-col">
                 <FormLabel>Name</FormLabel>
                 <FormControl>
                   <Input type="text" placeholder="Name" className="shad-input" {...field} />
@@ -99,7 +99,7 @@ function SignupForm() {
             control={form.control}
             name="username"
             render={({ field }) => (
-              <FormItem >
+              <FormItem className="flex flex-col">
                 <FormLabel>Username</FormLabel>
                 <FormControl>
                   <Input type="text" placeholder="user name" className="shad-input" {...field} />
@@ -111,7 +111,7 @@ function SignupForm() {
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem >
+              <FormItem className="flex flex-col">
                 <FormLabel>email</FormLabel>
                 <FormControl>
                   <Input placeholder="email" className="shad-input" {...field} />
@@ -123,7 +123,7 @@ function SignupForm() {
             control={form.control}
             name="password"
             render={({ field }) => (
-              <FormItem >
+              <FormItem className="flex flex-col">
                 <FormLabel>Password</FormLabel>
                 <FormControl>
                   <Input type="password" placeholder="password" className="shad-input" {...field} />
