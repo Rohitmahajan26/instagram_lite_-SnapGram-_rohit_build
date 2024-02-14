@@ -72,7 +72,8 @@ const PostCard = ({ post }: PostCardProps) => {
         <img
           src={post.imageUrl || "/assets/icons/profile-placeholder.svg"}
           alt="post image"
-          className="post-card_img h:18"
+          className="post-card_img "
+          style={{ width: '100%', height: '70%'}}
         />
       </Link>
 
